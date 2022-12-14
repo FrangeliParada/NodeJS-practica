@@ -1,0 +1,22 @@
+// const frutero = require('./frutas');  -> para una sola propiedad
+const frutero = require('./frutas');
+
+const cowsay = require("cowsay");
+
+console.log(cowsay.say({
+    text: "Hola amigoxxxx",
+    e: "oO",
+    T: "U"
+}));
+
+const {frutas, dinero}= require('./frutas');  //dos o mas propiedades
+
+// frutero.forEach(element => {
+//     console.log(element);
+// });
+
+frutas.forEach(element => {
+    console.log(element);
+});
+
+console.log(dinero);
